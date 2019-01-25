@@ -1,12 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+    <title>Интернет-магазин мороженого «Глейси»</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">   
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<body>
 
-  </body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+                <img src="img/logo.svg" width="154px" height="64px" alt="Логотип «Глейси»">
+            </a>
+
+            <ul class="site-navigation">
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О Компании</a> </li>
+            </ul>
+
+            <ul class="user-navigation">
+                <li><a class=" visually-hidden search" href="#">Поиск</a></li>
+                <li><a class="login-link" href="#">Вход</a></li>
+                <li><a class="basket" href="">Пусто</a></li>
+            </ul>
+
+        </nav>
+
+        <p class="contacts">
+            С 10 до 20, ежедневно<br />
+            8 812 450-25-25
+        </p>
+    </header>
+
+    <main class="container">
+        <h1 class="visually-hidden">Интернет-магазин мороженого «Глейси»</h1>
+
+        <section class="features">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <ul class="features-list">
+                <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого
+                    собственного производства на развес</h3>
+                <p>Все наше мороженое изготавливается на собственном производстве,
+                    с использованием современного оборудования и проверенных временем технологий.</p>
+                <p>Для приготовления мороженого используются настоящие сливки и молоко
+                    высочайшего качества. Все дополнительные ингредиенты и добавки произведены
+                    из натурального, экологически чистого сырья.</p>
+                <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и
+                    компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном
+                    термопаке, который не дает мороженому растаять в пути и позволяет
+                    сохранить превосходный вкус.</p>
+            </ul>
+        </section>
+
+        <section class="news">
+            <h2>Новое в нашем блоге</h2>
+            <p class="news-item"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+        </section>
+
+        <section class="subscription">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+                всего самого вкусного, что у нас происходит. Обещаем не спамить
+                и не слать всякой ненужной ерунды. Честно =) </p>
+            <form action="#" method="post">
+                <label class="visually-hidden" for="email">e-mail</label>
+                <input type="email" name="email" placeholder="Электронная почта">
+            </form>
+            <input type="submit" value="Отправить">
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-social">
+            <ul>
+                <li><a class="social-button" href="">Twitter</a></li>
+                <li><a class="social-button" href="">Instagram</a></li>
+                <li><a class="social-button" href="">Facebook</a></li>
+                <li><a class="social-button" href="">ВКонтакте</a></li>
+            </ul>
+        </div>
+
+        <div class="main-footer">
+            <ul class="main-footer-list">
+                <li><a href="#">Для поставщиков</a></li>
+                <li><a href="#">О производстве</a></li>
+                <li><a href="#">Наши документы</a></li>
+                <li><a href="#">Экологические стандарты</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-copyright">
+            <a class="academy-logo">
+                <img src="#" width="#" height="#" alt="Логотип «html academy»">
+                <p>Сделано в HTML Academy © 2017</p>
+            </a>
+        </div>
+    </footer>
+
+    <section class="modal modal-catalog">
+        <h2 class="visually-hidden">Сорта мороженого</h2>
+        <form class="catalogue-form" action="#" method="post">
+
+        </form>
+
+    </section>
+
+    <section class="modal modal-search">
+        <h2 class="visually-hidden">Поиск</h2>
+        <form class="search-form" action="#" method="post">
+            <label class="visually-hidden" for="search-user">Поиск</label>
+            <input class="search-user" type="search" name="search" placeholder="Что ищем?">
+        </form>
+    </section>
+
+    <section class="modal modal-login">
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <form class="login-form" action="#" method="post">
+            <p>
+                <label class="visually-hidden" for="login-user">Логин</label>
+                <input class="login-user" type="text" name="login" placeholder="Электроная почта">
+            </p>
+            <p>
+                <label class="visually-hidden" for="password-user">Пароль</label>
+                <input class="password-user" type="password" name="password" placeholder="Пароль">
+            </p>
+        </form>
+        <button class="modal-enter" type="submit">Войти</button>
+        <p class="registration">
+            <a href="#">Забыли пароль</a><br />
+            <a href="#">Новая регситрация</a>
+        </p>
+    </section>
+
+    <section class="modal modal-feedback">
+        <h2>Мы обязательно вам ответим!</h2>
+        <form class="feedback-form" action="#" method="post">
+            <p>
+                <label class="visually-hidden" for="name-user">Имя</label>
+                <input class="name-user" type="text" name="name" placeholder="Как вас зовут?">
+            </p>
+            <p>
+                <label class="visually-hidden" for="password-user">e-mail</label>
+                <input class="email-user" type="email" name="email" placeholder="Ваша почта для ответа">
+            </p>
+            <p>
+                <textarea name="comment" row="50" cols="50">Напишите что-нибудь...</textarea>
+            </p>
+            <input type="submit" value="Отправить">
+        </form>
+    </section>
+
+    <section class="modal modal-basket">
+        <h2>Товар в корзине</h2>
+        <span class="modal-close">x</span>
+    </section>
+
+
+</body>
+
 </html>
