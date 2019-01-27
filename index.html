@@ -5,17 +5,18 @@
     <meta charset="utf-8">
     <title>Интернет-магазин мороженого «Глейси»</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">   
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
     <header class="main-header">
+        <div class="main-header-logo">
+            <img src="img/logo.svg" width="154px" height="64px" alt="Логотип «Глейси»">
+        </div>
+
         <nav class="main-navigation">
-            <a class="main-header-logo">
-                <img src="img/logo.svg" width="154px" height="64px" alt="Логотип «Глейси»">
-            </a>
 
             <ul class="site-navigation">
                 <li><a href="#">Каталог</a></li>
@@ -23,11 +24,11 @@
                 <li><a href="#">О Компании</a> </li>
             </ul>
 
-            <ul class="user-navigation">
-                <li><a class=" visually-hidden search" href="#">Поиск</a></li>
-                <li><a class="login-link" href="#">Вход</a></li>
-                <li><a class="basket" href="">Пусто</a></li>
-            </ul>
+            <div class="user-navigation">
+                <div class="visually-hidden search"><a href="#">Поиск</a></div>
+                <div class="login-link"><a href="#">Вход</a></div>
+                <div class="basket"><a href="#">Пусто</a></div>
+            </div>
 
         </nav>
 
@@ -42,19 +43,19 @@
 
         <section class="features">
             <h2 class="visually-hidden">Преимущества</h2>
+            <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого
+                собственного производства на развес</h3>
             <ul class="features-list">
-                <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого
-                    собственного производства на развес</h3>
-                <p>Все наше мороженое изготавливается на собственном производстве,
-                    с использованием современного оборудования и проверенных временем технологий.</p>
-                <p>Для приготовления мороженого используются настоящие сливки и молоко
+                <li>Все наше мороженое изготавливается на собственном производстве,
+                    с использованием современного оборудования и проверенных временем технологий.</li>
+                <li>Для приготовления мороженого используются настоящие сливки и молоко
                     высочайшего качества. Все дополнительные ингредиенты и добавки произведены
-                    из натурального, экологически чистого сырья.</p>
-                <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и
-                    компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном
+                    из натурального, экологически чистого сырья.</li>
+                <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и
+                    компаний, с которыми нас связывает долговременное сотрудничество.</li>
+                <li>Доставка нашего мороженого до заказчиков осуществляется в специальном
                     термопаке, который не дает мороженому растаять в пути и позволяет
-                    сохранить превосходный вкус.</p>
+                    сохранить превосходный вкус.</li>
             </ul>
         </section>
 
@@ -64,29 +65,30 @@
         </section>
 
         <section class="subscription">
+            <h2 class="visually-hidden">Подписка на новости</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
                 всего самого вкусного, что у нас происходит. Обещаем не спамить
                 и не слать всякой ненужной ерунды. Честно =) </p>
             <form action="#" method="post">
                 <label class="visually-hidden" for="email">e-mail</label>
-                <input type="email" name="email" placeholder="Электронная почта">
+                <input type="email" name="email" id="email-field" placeholder="Электронная почта">
             </form>
-            <input type="submit" value="Отправить">
+            <button class="subscription-send" type="submit">Отправить</button>
         </section>
     </main>
 
     <footer class="main-footer">
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="">Twitter</a></li>
-                <li><a class="social-button" href="">Instagram</a></li>
-                <li><a class="social-button" href="">Facebook</a></li>
-                <li><a class="social-button" href="">ВКонтакте</a></li>
+                <li><a class="social-button" href="#">Twitter</a></li>
+                <li><a class="social-button" href="#">Instagram</a></li>
+                <li><a class="social-button" href="#">Facebook</a></li>
+                <li><a class="social-button" href="#">ВКонтакте</a></li>
             </ul>
         </div>
 
-        <div class="main-footer">
-            <ul class="main-footer-list">
+        <div class="footer-about-us">
+            <ul class="footer-about-us-list">
                 <li><a href="#">Для поставщиков</a></li>
                 <li><a href="#">О производстве</a></li>
                 <li><a href="#">Наши документы</a></li>
@@ -95,9 +97,8 @@
         </div>
 
         <div class="footer-copyright">
-            <a class="academy-logo">
-                <img src="#" width="#" height="#" alt="Логотип «html academy»">
-                <p>Сделано в HTML Academy © 2017</p>
+            <img src="img/logo-htmlacademy.svg" width="108px" height="39px" alt="Логотип «html academy»">
+            <p><a href="https://htmlacademy.ru" target="_blank">Сделано в HTML Academy © 2017</a></p>
             </a>
         </div>
     </footer>
@@ -114,7 +115,7 @@
         <h2 class="visually-hidden">Поиск</h2>
         <form class="search-form" action="#" method="post">
             <label class="visually-hidden" for="search-user">Поиск</label>
-            <input class="search-user" type="search" name="search" placeholder="Что ищем?">
+            <input class="search-user" type="search" name="search" id="search-field" placeholder="Что ищем?">
         </form>
     </section>
 
@@ -129,8 +130,9 @@
                 <label class="visually-hidden" for="password-user">Пароль</label>
                 <input class="password-user" type="password" name="password" placeholder="Пароль">
             </p>
+            <button class="modal-enter" type="submit">Войти</button>
         </form>
-        <button class="modal-enter" type="submit">Войти</button>
+
         <p class="registration">
             <a href="#">Забыли пароль</a><br />
             <a href="#">Новая регситрация</a>
@@ -149,9 +151,9 @@
                 <input class="email-user" type="email" name="email" placeholder="Ваша почта для ответа">
             </p>
             <p>
-                <textarea name="comment" row="50" cols="50">Напишите что-нибудь...</textarea>
+                <textarea name="comment" rows="20" cols="50">Напишите что-нибудь...</textarea>
             </p>
-            <input type="submit" value="Отправить">
+            <button type="submit">Отправить</button>
         </form>
     </section>
 
