@@ -10,7 +10,7 @@
 
     <header class="main-header">
         <div class="main-header-logo">
-            <img src="img/logo.svg" width="154px" height="64px" alt="Логотип «Глейси»">
+            <a href="index.html"><img src="img/logo.svg" width="154px" height="64px" alt="Логотип «Глейси»"></a>
         </div>
 
         <nav class="main-navigation">
@@ -194,17 +194,14 @@
     </footer>
 
     <section class="modal modal-catalog">
-        <h2 class="visually-hidden">Сорта мороженого</h2>
-        <form class="catalogue-form" action="#" method="post">
-
-        </form>
-
+    <h2 class="visually-hidden">Сорта мороженого</h2>
+    <form class="catalogue-form" action="#" method="post"></form>
     </section>
 
     <section class="modal modal-search">
         <h2 class="visually-hidden">Поиск</h2>
         <form class="search-form" action="#" method="post">
-            <label class="visually-hidden" for="search-user">Поиск</label>
+            <label class="visually-hidden" for="search-field">Поиск</label>
             <input class="search-user" type="search" name="search" id="search-field" placeholder="Что ищем?">
         </form>
     </section>
@@ -213,16 +210,15 @@
         <h2 class="visually-hidden">Личный кабинет</h2>
         <form class="login-form" action="#" method="post">
             <p>
-                <label class="visually-hidden" for="login-user">Логин</label>
-                <input class="login-user" type="text" name="login" placeholder="Электроная почта">
+                <label class="visually-hidden" for="login-user-field">Логин</label>
+                <input class="login-user" type="text" name="login" id="login-user-field" placeholder="Электроная почта">
             </p>
             <p>
-                <label class="visually-hidden" for="password-user">Пароль</label>
-                <input class="password-user" type="password" name="password" placeholder="Пароль">
+                <label class="visually-hidden" for="password-user-field">Пароль</label>
+                <input class="password-user" type="password" name="password" id="password-user-field" placeholder="Пароль">
             </p>
             <button class="modal-enter" type="submit">Войти</button>
         </form>
-
         <p class="registration">
             <a href="#">Забыли пароль</a><br />
             <a href="#">Новая регситрация</a>
@@ -233,12 +229,12 @@
         <h2>Мы обязательно вам ответим!</h2>
         <form class="feedback-form" action="#" method="post">
             <p>
-                <label class="visually-hidden" for="name-user">Имя</label>
-                <input class="name-user" type="text" name="name" placeholder="Как вас зовут?">
+                <label class="visually-hidden" for="name-user-field">Имя</label>
+                <input class="name-user" type="text" name="name" id="name-user-field" placeholder="Как вас зовут?">
             </p>
             <p>
-                <label class="visually-hidden" for="password-user">e-mail</label>
-                <input class="email-user" type="email" name="email" placeholder="Ваша почта для ответа">
+                <label class="visually-hidden" for="email-reply-field">e-mail</label>
+                <input class="email-user" type="email" name="email" id="email-reply-field" placeholder="Ваша почта для ответа">
             </p>
             <p>
                 <textarea name="comment" rows="20" cols="50">Напишите что-нибудь...</textarea>
