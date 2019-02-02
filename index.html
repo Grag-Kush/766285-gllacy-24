@@ -11,6 +11,10 @@
 
 <body>
 
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
     <header class="main-header">
         <div class="main-header-logo">
             <img src="img/logo.svg" width="154" height="64" alt="Логотип «Глейси»">
@@ -30,16 +34,144 @@
                 <div class="basket"><a href="#">Пусто</a></div>
             </div>
 
+            <!--<section class="modal modal-catalog">
+                <h2 class="visually-hidden">Меню каталога</h2>
+                <ul>
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Сливочное</a></li>
+                    <li><a href="#">Щербеты</a></li>
+                    <li><a href="#">Фруктовый лед</a></li>
+                    <li><a href="#">Мелорин</a></li>
+                </ul>
+            </section>-->
+
+            <!--<section class="modal modal-search">
+                    <h2 class="visually-hidden">Поиск</h2>
+                    <form class="search-form" action="#" method="post">
+                        <label class="visually-hidden" for="search-field">Поиск</label>
+                        <input class="search-user" type="search" name="search" id="search-field" placeholder="Что ищем?">
+                    </form>
+                </section>-->
+
+            <!--<section class="modal modal-login">
+                    <h2 class="visually-hidden">Личный кабинет</h2>
+                    <form class="login-form" action="#" method="post">
+                        <p>
+                            <label class="visually-hidden" for="login-user-field">Логин</label>
+                            <input class="login-user" type="text" name="login" id="login-user-field" placeholder="Электроная почта">
+                        </p>
+                        <p>
+                            <label class="visually-hidden" for="password-user-field">Пароль</label>
+                            <input class="password-user" type="password" name="password" id="password-user-field" placeholder="Пароль">
+                        </p>
+                        <button class="modal-enter" type="submit">Войти</button>
+                    </form>
+                    <p class="registration">
+                        <a href="#">Забыли пароль</a><br />
+                        <a href="#">Новая регситрация</a>
+                    </p>
+                </section>-->
+
         </nav>
 
         <p class="contacts">
             С 10 до 20, ежедневно<br />
             8 812 450-25-25
         </p>
+
+        <section class="slider">
+
+            <div class="slider-controls">
+                <label for="product-1">Первый</label>
+                <label for="product-2">Второй</label>
+                <label for="product-3">Третий</label>
+            </div>
+
+            <ul class="slider-list">
+                <li class="slider-item slide" id="slide1">
+                    <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+                    <a class="button slide-button" href="#">Давайте оба!</a>
+                </li>
+
+                <li class="slider-item slide" id="slide2">
+                    <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+                    <a class="button slide-button" href="#">Давайте оба!</a>
+                </li>
+
+                <li class="slider-item slide" id="slide3">
+                    <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+                    <a class="button slide-button" href="#">Давайте оба!</a>
+                </li>
+            </ul>
+        </section>
+
     </header>
 
     <main class="container">
         <h1 class="visually-hidden">Интернет-магазин мороженого «Глейси»</h1>
+
+        <section class="proposals">
+            <h2 class="visually-hidden">Мы предлогаем</h2>
+
+            <div class="our-proposals">
+                <h3>Малинка даром!</h3>
+                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
+                    банку малинового варенья бесплатно.</p>
+                <button type="submit">Хочу варенье!</button>
+            </div>
+
+            <div class="our-proposals">
+                <h3>Шоколадки даром!</h3>
+                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
+                    шоколадной присыпки совершенно бесплатно.</p>
+                <button type="submit">Хочу шоколадки!</button>
+            </div>
+        </section>
+
+        <section class="hit-sales">
+            <h2 class="visually-hidden">Хиты продаж</h2>
+            <ul class="hit-list">
+                <li class="hit-item">
+                    <p>Хит</p>
+                    <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+                    <p class="catalog-item-image">
+                        <a href="#"><img src="img/ice-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым 
+                            джемом и цитрусовой стружкой"></a>
+                    </p>
+                    <b>310₽/кг</b>
+                </li>
+
+                <li class="hit-item">
+                    <p>Хит</p>
+                    <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+                    <p class="catalog-item-image">
+                        <a href="#"><img src="img/ice-2.jpg" width="267" height="267" alt="Сливочно-кофейное 
+                                с кусочками шоколада"></a>
+                    </p>
+                    <b>380₽/кг</b>
+                </li>
+
+                <li class="hit-item">
+                    <p>Хит</p>
+                    <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+                    <p class="catalog-item-image">
+                        <a href="#"><img src="img/ice-3.jpg" width="267" height="267" alt="Сливочно-клубничное 
+                                    с присыпкой из белого шоколада"></a>
+                    </p>
+                    <b>355₽/кг</b>
+                </li>
+
+                <li class="hit-item">
+                    <p>Хит</p>
+                    <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+                    <p class="catalog-item-image">
+                        <a href="#"><img src="img/ice-4.jpg" width="267" height="267" alt="Сливочное крем-брюле 
+                                        с карамельной подливкой"></a>
+                    </p>
+                    <b>415₽/кг</b>
+                </li>
+            </ul>
+        </section>
 
         <section class="features">
             <h2 class="visually-hidden">Преимущества</h2>
@@ -75,6 +207,41 @@
             </form>
             <button class="subscription-send" type="submit">Отправить</button>
         </section>
+
+        <section class="address">
+            <h2 class="visually-hidden">Адрес интернет-магазин мороженого «Глейси»</h2>
+            <div class="address-phone">
+                <h3>Адрес главного офиса и офлайн-магазина:</h3>
+                <p class="address-office">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+                <h3>Для заказов по телефону:</h3>
+                <p class="phone-office">8 812 450-25-25</p>
+                <p>(с 10 до 20 ежедневно)</p>
+                <button type="submit">Форма обратной связи</button>
+            </div>
+
+            <div class="map">
+                <img src="img/map.jpg" width="1250" height="640" alt="Местонахождение на карте">
+            </div>
+        </section>
+
+        <!--<section class="modal modal-feedback">
+                <h2>Мы обязательно вам ответим!</h2>
+                <form class="feedback-form" action="#" method="post">
+                    <p>
+                        <label class="visually-hidden" for="name-user-field">Имя</label>
+                        <input class="name-user" type="text" name="name" id="name-user-field" placeholder="Как вас зовут?">
+                    </p>
+                    <p>
+                        <label class="visually-hidden" for="email-reply-field">e-mail</label>
+                        <input class="email-user" type="email" name="email" id="email-reply-field" placeholder="Ваша почта для ответа">
+                    </p>
+                    <p>
+                        <textarea name="comment" rows="20" cols="50">Напишите что-нибудь...</textarea>
+                    </p>
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>-->
+
     </main>
 
     <footer class="main-footer">
@@ -102,90 +269,6 @@
             <p>Сделано в<a href="https://htmlacademy.ru" target="_blank">HTML Academy ©</a>2017</p>
         </div>
     </footer>
-
-    <section class="modal modal-catalog">
-        <h2 class="visually-hidden">Сорта мороженого</h2>
-        <form class="catalogue-form" action="#" method="post"></form>
-    </section>
-
-    <section class="modal modal-search">
-        <h2 class="visually-hidden">Поиск</h2>
-        <form class="search-form" action="#" method="post">
-            <label class="visually-hidden" for="search-field">Поиск</label>
-            <input class="search-user" type="search" name="search" id="search-field" placeholder="Что ищем?">
-        </form>
-    </section>
-
-    <section class="modal modal-login">
-        <h2 class="visually-hidden">Личный кабинет</h2>
-        <form class="login-form" action="#" method="post">
-            <p>
-                <label class="visually-hidden" for="login-user-field">Логин</label>
-                <input class="login-user" type="text" name="login" id="login-user-field" placeholder="Электроная почта">
-            </p>
-            <p>
-                <label class="visually-hidden" for="password-user-field">Пароль</label>
-                <input class="password-user" type="password" name="password" id="password-user-field" placeholder="Пароль">
-            </p>
-            <button class="modal-enter" type="submit">Войти</button>
-        </form>
-        <p class="registration">
-            <a href="#">Забыли пароль</a><br />
-            <a href="#">Новая регситрация</a>
-        </p>
-    </section>
-
-    <section class="modal modal-feedback">
-        <h2>Мы обязательно вам ответим!</h2>
-        <form class="feedback-form" action="#" method="post">
-            <p>
-                <label class="visually-hidden" for="name-user-field">Имя</label>
-                <input class="name-user" type="text" name="name" id="name-user-field" placeholder="Как вас зовут?">
-            </p>
-            <p>
-                <label class="visually-hidden" for="email-reply-field">e-mail</label>
-                <input class="email-user" type="email" name="email" id="email-reply-field" placeholder="Ваша почта для ответа">
-            </p>
-            <p>
-                <textarea name="comment" rows="20" cols="50">Напишите что-нибудь...</textarea>
-            </p>
-            <button type="submit">Отправить</button>
-        </form>
-    </section>
-
-    <section class="modal modal-basket">
-        <h2 class="visually-hidden">Товар в корзине</h2>
-        <table class="basket-product">
-            <tr>
-                <td class="visually-hidden">Удалить</td>
-                <td class="image-ice-cream"><img src="img/ice-basket_1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                <td class="name-ice-cream">Пломбир с апельсиновым джемом</td>
-                <td class="amount-price">1,5 кг х 200 руб.</td>
-                <td class="total">300 руб.</td>
-            </tr>
-            <tr>
-                <td class="visually-hidden">Удалить</td>
-                <td class="image-ice-cream"><img src="img/ice-basket_2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                <td class="name-ice-cream">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td class="amount-price">1,5 кг х 300 руб.</td>
-                <td class="total">450 руб.</td>
-            </tr>
-        </table>
-        <p>Итого: 750 руб.</p>
-        <button type="submit">Оформить заказ</button>
-    </section>
-
-    <section class="modal modal-catalog">
-        <h2 class="visually-hidden">Меню каталога</h2>
-        <ul>
-            <li><a href="#">Новинки</a></li>
-            <li><a href="#">Сливочное</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый лед</a></li>
-            <li><a href="#">Мелорин</a></li>
-        </ul>
-    </section>
-
 
 </body>
 
