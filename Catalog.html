@@ -41,7 +41,7 @@
 
             <!--<section class="modal modal-search">
                     <h2 class="visually-hidden">Поиск</h2>
-                    <form class="search-form" action="#" method="post">
+                    <form class="search-form" action="#" method="get">
                         <label class="visually-hidden" for="search-field">Поиск</label>
                         <input class="search-user" type="search" name="search" id="search-field" placeholder="Что ищем?">
                     </form>
@@ -92,7 +92,7 @@
 
         <p class="contacts">
             С 10 до 20, ежедневно<br />
-            8 812 450-25-25
+            <a href="#">8 812 450-25-25</a>
         </p>
     </header>
 
@@ -109,33 +109,34 @@
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
 
-            <div class="sort">
-                <p>Сортировка:</p>
-                <div class="sort-box">
-                    <p class="name-box">по популярности</p>
-                </div>
-                <!--<div class="sort-list">
-                    <ul>
-                        <li class="popularity">по популярности</li>
-                        <li class="cheaply">сначала недорогие</li>
-                        <li class="dearly">сначала дорогие</li>
-                        <li class="fatness">по жирности</li>
-                    </ul>
-                </div>-->
-            </div>
+            <form class="filter-products" action="#" method="get">
 
-            <div class="filter-price">
-                <p>Цена: 100 руб. - 500 руб.</p>
-                <div class="price-box">
-                    <span class="line-1"></span>
-                    <span class="line-2"></span>
-                    <span class="line-3"></span>
-                    <span class="slider-1"></span>
-                    <span class="slider-2"></span>
+                <div class="sort">
+                    <p>Сортировка:</p>
+                    <div class="sort-box">
+                        <span class="name-box">по популярности</span>
+                    </div>
+                    <!--<div class="sort-list">
+                                    <span>по популярности</span>
+                                    <span>сначала недорогие</span>
+                                    <span>сначала дорогие</span>
+                                    <span>по жирности</span>
+                        </div>-->
                 </div>
-            </div>
 
-            <form class="filter-products" action="#" method="post">
+                <div class="filter-price">
+                    <p>Цена:</p>
+                    <span class="min-price">100 руб.</span>
+                    <span class="dash">-</span>
+                    <span class="max-price">500 руб.</span>
+                    <div class="price-box">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                        <span class="slider-1"></span>
+                        <span class="slider-2"></span>
+                    </div>
+                </div>
 
                 <fieldset>
                     <legend>Жирность:</legend>
@@ -312,65 +313,12 @@
         </div>
 
         <div class="footer-copyright">
-            <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип «html academy»">
-            <p><a href="https://htmlacademy.ru" target="_blank">Сделано в HTML Academy © 2017</a></p>
+            <a href="https://htmlacademy.ru" target="_blank"><img src="img/logo-htmlacademy.svg" width="108" height="39"
+                    alt="Логотип «html academy»"></a>
+            <p>Сделано в<a href="https://htmlacademy.ru" target="_blank">HTML Academy ©</a>2017</p>
         </div>
     </footer>
 
-    <section class="modal modal-catalog">
-        <h2 class="visually-hidden">Сорта мороженого</h2>
-        <form class="catalogue-form" action="#" method="post"></form>
-    </section>
-
-    <section class="modal modal-search">
-        <h2 class="visually-hidden">Поиск</h2>
-        <form class="search-form" action="#" method="post">
-            <label class="visually-hidden" for="search-field">Поиск</label>
-            <input class="search-user" type="search" name="search" id="search-field" placeholder="Что ищем?">
-        </form>
-    </section>
-
-    <section class="modal modal-login">
-        <h2 class="visually-hidden">Личный кабинет</h2>
-        <form class="login-form" action="#" method="post">
-            <p>
-                <label class="visually-hidden" for="login-user-field">Логин</label>
-                <input class="login-user" type="text" name="login" id="login-user-field" placeholder="Электроная почта">
-            </p>
-            <p>
-                <label class="visually-hidden" for="password-user-field">Пароль</label>
-                <input class="password-user" type="password" name="password" id="password-user-field" placeholder="Пароль">
-            </p>
-            <button class="modal-enter" type="submit">Войти</button>
-        </form>
-        <p class="registration">
-            <a href="#">Забыли пароль</a><br />
-            <a href="#">Новая регситрация</a>
-        </p>
-    </section>
-
-    <section class="modal modal-feedback">
-        <h2>Мы обязательно вам ответим!</h2>
-        <form class="feedback-form" action="#" method="post">
-            <p>
-                <label class="visually-hidden" for="name-user-field">Имя</label>
-                <input class="name-user" type="text" name="name" id="name-user-field" placeholder="Как вас зовут?">
-            </p>
-            <p>
-                <label class="visually-hidden" for="email-reply-field">e-mail</label>
-                <input class="email-user" type="email" name="email" id="email-reply-field" placeholder="Ваша почта для ответа">
-            </p>
-            <p>
-                <textarea name="comment" rows="20" cols="50">Напишите что-нибудь...</textarea>
-            </p>
-            <button type="submit">Отправить</button>
-        </form>
-    </section>
-
-    <section class="modal modal-basket">
-        <h2>Товар в корзине</h2>
-        <span class="modal-close">x</span>
-    </section>
 
 </body>
 
