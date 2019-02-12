@@ -1,29 +1,80 @@
-body {
-    margin: 0;
-    padding: 0;
 
+@font-face {
+    font-family: "Roboto";
+    src: url('766285-gllacy-24/fonts/Roboto.eot');
+    src: url('766285-gllacy-24/fonts/Roboto.eot?iefix') format('eot'),
+    url('766285-gllacy-24/fonts/Roboto.woff') format('woff'),
+    url('766285-gllacy-24/fonts/Roboto.ttf') format('truetype'),
+    url('766285-gllacy-24/fonts/Roboto.svg#webfont') format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #849d8f;
+    color: #323232;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
+    font-weight: normal;
     line-height: 22px;
-    font-weight: 700;
-    color: #323232;
-
-    background-color: #849d8f;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    display: none;
+}
+
+/*******Коды header*******/
+.main-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header .container {
+    display: flex;
+}
+
+.main-header-logo {
+    width: 154px;
+    height: 64px;
+}
+
 .main-navigation {
-    font-size: 16px;
-    line-height: 18px;
     color: #ffffff;
+    font-size: 16px;
+    font-weight: bold; 
+    line-height: 18px;
+    margin: 0;
+    margin-left: 25px;
+    padding: 0;
+    width: 970px;
+}
+
+.main-navigation .container {
+    justify-content: space-between;
+    display: flex;
+}
+
+.site-navigation {
+    width: 380px;
+}
+
+.user-navigation {
+    width: 290px;
 }
 
 .site-navigation,
 .user-navigation {
-  list-style: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .site-navigation a,
@@ -31,13 +82,410 @@ a {
   color: #ffffff;
 }
 
-.features {
-    color: #323232;
-    background-image: url("img/Вафля фон.png");
-
+.contacts {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
 }
 
-.features-list h3 {
+.contacts a {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+/*******Коды header*******/
+
+.breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs a {
+    color: #ffffff;
+}
+
+.breadcrumbs-current {
+    color: #ffffff;
+  }
+
+/*******Коды main*******/
+.proposals {
+    margin-bottom: 40px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.proposals .container {
+    width: 1145px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-proposals-1 {
+    background-image: url("../img/Raspberry-fon.jpg");
+}
+
+.our-proposals-2 {
+    background-image: url("../img/Chocolate-fon.jpg");
+}
+
+.our-proposals-1,
+.our-proposals-2 {
+    background-color: #000000;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    height: 230px;
+    margin: 0;
+    padding: 0;
+    width: 560px;
+}
+
+.our-proposals-1 h3,
+.our-proposals-2 h3 {
+    font-size: 35px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 20px; 
+}
+
+.our-proposals-1 p,
+.our-proposals-2 p {
+    font-size: 18px;
+    padding-left: 20px; 
+}
+
+.our-proposals-1 a,
+.our-proposals-2 a {
+    background-color: #f06643;
+    border-radius: 40px;
+    color: #ffffff; 
+    height: 45px;
+}
+
+.hit-sales {
+    margin-bottom: 40px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-list .container {
+    width: 1145px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-item {
+    width: 265px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-item h3 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px; 
+    text-align: center;   
+}
+
+.catalog-item a {
+    color: #ffffff;
+}
+
+.catalog-item-image img {
+    border-radius: 50%;
+    height: 265px;
+    width: 265px;
+}
+
+.catalog-item b {
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bolder;
+}
+
+.features {
+    margin-bottom: 40px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.features-wrapper {
+    background-image: url("../img/Waffle-fon.jpg");
+    border-radius: 20px;
+    color: #323232;
+    margin: 0;
+    padding: 0;
+    width: 1145px;
+}
+
+.features h3 {
     font-size: 24px;
     line-height: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
+
+.features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.features-list .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features-list li {
+    padding-bottom: 30px;
+    width: 540px;
+}
+
+.news-subscription {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-subscription .container {
+    width: 1145px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.news {
+    background-image: url("../img/Strawberry-fon.jpg");
+    background-position: -45px -55px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 560px;
+}
+
+.news h2 {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.news-item {
+    padding-bottom: 85px;
+    padding-left: 20px;
+    padding-right: 240px;
+}
+
+.news a {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-decoration: underline;
+}
+
+.subscription {
+    background-color: #f8f7f4;
+    border-radius: 20px;
+    width: 560px;
+}
+
+.subscription p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 35px; 
+    
+}
+
+.subscription form {
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.subscription input {
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #999999;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 370px;
+}
+
+.subscription-send {
+    background-color: #f06441;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    height: 45px;
+    width: 130px;
+}
+
+.address-phone {
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.address-phone h3 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+    padding-left: 25px;
+    padding-top: 35px;
+}
+
+.address-phone address {
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+.phone-office {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+.phone-office a {
+    color: #000000;
+}
+
+.time-work {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+    padding-left: 25px;
+}
+
+.address-phone-button {
+    background-color: #f06341;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    height: 45px;
+    width: 250px;
+}
+
+.map {
+    background-image: url("../img/map.jpg");
+    background-position: -20px -105px;
+    height: 430px;
+    margin-bottom: 40px;
+    width: 1200px;
+}
+
+.pagination-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination-list a {
+    color: #ffffff;
+    font-size: 16px;
+}
+/*******Коды main*******/
+
+/*******Коды footer*******/
+.main-footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-footer-wrapper {
+    display: flex;
+}
+
+.footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 265px;
+}
+
+.footer-about-us {
+    width: 560px;
+}
+
+.footer-about-us ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-about-us-list a {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-copyright {
+    width: 265px;
+}
+
+.footer-copyright p {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.footer-copyright a {
+    color: #ffffff;
+}
+
+
+/*******Коды footer*******/
