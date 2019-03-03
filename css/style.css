@@ -1450,9 +1450,10 @@ a {
 
 }
 
-.in-beginning a {
+.in-beginning svg {
     color: rgba(255, 255, 255, 0.3);
     margin-right: 10px;
+    transform: rotate(180deg);
 }
 
 .in-end a {
