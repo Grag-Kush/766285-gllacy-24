@@ -1064,7 +1064,7 @@ a {
     padding: 0;
 }
 
-.features-list .container {
+.features-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
