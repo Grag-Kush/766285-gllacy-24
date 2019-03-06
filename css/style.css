@@ -12,7 +12,7 @@
 @font-face {
     font-family: "Roboto";
     src: local("Roboto"), 
-    local("Roboto-Regular"), 
+    local("Roboto-Medium"), 
     url("../fonts/Robotomedium.woff2") format("woff2"), 
     url("../fonts/Robotomedium.woff") format("woff");
     font-weight: 500;
@@ -22,7 +22,7 @@
 @font-face {
     font-family: "Roboto";
     src: local("Roboto"), 
-    local("Roboto-Regular"), 
+    local("Roboto-Bold"), 
     url("../fonts/Robotobold.woff2") format("woff2"), 
     url("../fonts/Robotobold.woff") format("woff");
     font-weight: 700;
@@ -176,6 +176,12 @@ a {
     padding: 10px 15px;
 }
 
+.link-catalog:hover .modal-catalog, 
+.link-catalog:focus .modal-catalog {
+    display: block;
+}
+
+
 .link-catalog:active,
 .link-delivery:active,
 .link-about-company:active {
@@ -196,15 +202,19 @@ a {
 }
 
 .link-search {
-    box-sizing: border-box;
+    
     border-radius: 50%;
     background-color:rgba(255, 255, 255, 0.3);
-    padding: 7px 10px 10px 10px;
+    padding: 21px 20px 13px 15px;
     color: #ffffff;
+    font-size: 0;
 }
 
 .link-search svg {
-    vertical-align: middle;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    
 }
 
 .link-enter {
@@ -232,11 +242,97 @@ a {
     font-weight: 700;
     line-height: 16px;
     padding: 10px 15px;
+    position: relative;
 }
 
 .link-basket svg {
     margin-right: 10px;
     vertical-align: middle;
+}
+
+.modal-basket {
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    padding: 20px 15px 20px 15px;
+    width: 540px;
+
+    position: absolute;
+    right: 0;
+    top: 60px;
+
+    z-index: 1;
+}
+
+.basket-product {
+    background-color: rebeccapurple;
+    margin: 0;
+}
+
+.ice-cream-basket {
+    font-size: 13px;
+    font-weight: 400px;
+    line-height: 16px;
+    color: #323232;
+    padding-left: 15px;
+    width: 230px;
+
+    background-color: red;
+ 
+}
+
+.amount-price {
+    font-size: 13px;
+    font-weight: 400px;
+    line-height: 16px;
+    color: #323232;
+    padding-left: 35px;
+
+    background-color: green;
+}
+
+.total {
+    font-size: 13px;
+    font-weight: 400px;
+    line-height: 16px;
+    color: #323232;
+    padding-left: 30px;
+
+    background-color: yellow;
+}
+
+.modal-basket p {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #323232;
+    text-align: right;
+
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    background-color: goldenrod;
+}
+
+.basket-enter {
+    background: #f26843;
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 24px;
+    margin-left: 320px;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+    vertical-align: top;
 }
 
 .link-search:hover,
@@ -270,6 +366,7 @@ a {
 
 .modal-catalog {
     box-sizing: border-box;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
     border-radius: 5px;
     padding: 10px 0 10px 0;
@@ -302,6 +399,13 @@ a {
     margin-left: 20px;
 }
 
+.creamy-current {
+    background-color: #d07058;
+    color: #ffffff;
+}
+
+
+
 .link-creamy,
 .link-sherbets,
 .link-fruit-ice,
@@ -311,6 +415,10 @@ a {
     font-weight: 400;
     line-height: 16px;
     margin-left: 20px;
+}
+
+.link-creamy-current {
+    color: #ffffff;
 }
 
 .separator {
@@ -331,6 +439,7 @@ a {
 
 .modal-search {
     box-sizing: border-box;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
     background-color: #f8f7f4;
     border-radius: 5px;
     padding: 20px 15px 20px 15px;
@@ -375,7 +484,7 @@ a {
 
 .modal-login {
     box-sizing: border-box;
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     background-color: #f8f7f4;
     border-radius: 5px;
     position: absolute;
@@ -386,6 +495,7 @@ a {
     z-index: 1;
 
     display: none;
+    
 }
 
 .login-user,
@@ -1341,28 +1451,57 @@ a {
 .modal-feedback {
     background-color: #f8f7f4;
     border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     width: 480px;
     padding-top: 20px;
     padding-left: 25px;
     padding-bottom: 20px;
-    position: relative;
+    position: fixed;
+    left: 50%;
+    top: 25%;
+    margin-left: -250px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+
+    width: 25px;
+    height: 25px;
+  
+    font-size: 0;
+    background-color: #f8f7f4;
+    border: 0;
+  
+    cursor: pointer;
+}
+
+  .modal-close::before,
+  .modal-close::after {
+    content: "";
+  
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    width: 20px;
+    height: 3px;
+  
+    background-color: #323232;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+  
+  .modal-close::after {
+    transform: rotate(-45deg);
 }
 
 .modal-feedback h2 {
     font-size: 24px;
     line-height: 28px;
     margin: 0;
-}
-
-.modal-feedback h2::after {
-    background-image: url("../img/cross-big.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    content: "";
-    left: 440px;
-    height: 20px;
-    position: absolute;
-    width: 21px;
 }
 
 .name-user,
@@ -1412,6 +1551,23 @@ a {
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
     vertical-align: top;
 }
+
+.name-user:hover,
+.email-user:hover,
+.name-user:focus,
+.email-user:focus,
+.modal-feedback textarea:hover,
+.modal-feedback textarea:focus {
+    border: 2px solid #b4b4b4;
+    margin-bottom: -2px;
+}
+
+.name-user:active,
+.email-user:active,
+.modal-feedback textarea:active {
+    border: 2px solid #8fbdec;
+}
+
 
 .modal-feedback button:hover,
 .modal-feedback button:focus {

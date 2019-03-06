@@ -21,7 +21,10 @@
             <div class="container">
 
                 <div class="main-header-logo">
-                    <a><img src="img/logo.svg" width="154" height="64" alt="Логотип «Глейси»"></a>
+                    <a><img src="img/logo.svg" width="154" height="64" alt="Логотип «Глейси»">
+
+
+                    </a>
                 </div>
 
                 <nav class="main-navigation">
@@ -30,19 +33,23 @@
 
                         <ul class="site-navigation">
 
-                            <li><a class="link-catalog" href="catalog.html">Каталог</a>
+                            <li><a class="link-catalog" href="catalog.html">Каталог
 
-                                <section class="modal modal-catalog">
-                                    <h2 class="visually-hidden">Меню каталога</h2>
-                                    <ul class=list-catalog>
-                                        <li><a class="link-new" href="#">Новинки</a></li>
-                                        <li class="separator"></li>
-                                        <li><a class="link-creamy" href="#">Сливочное</a></li>
-                                        <li><a class="link-sherbets" href="#">Щербеты</a></li>
-                                        <li><a class="link-fruit-ice" href="#">Фруктовый лед</a></li>
-                                        <li><a class="link-melorin" href="#">Мелорин</a></li>
-                                    </ul>
-                                </section>
+                                    <section class="modal modal-catalog">
+                                        <h2 class="visually-hidden">Меню каталога</h2>
+                                        <ul class=list-catalog>
+                                            <li><a class="link-new" href="#">Новинки</a></li>
+                                            <li class="separator"></li>
+                                            <li><a class="link-creamy" href="#">Сливочное</a></li>
+                                            <li><a class="link-sherbets" href="#">Щербеты</a></li>
+                                            <li><a class="link-fruit-ice" href="#">Фруктовый лед</a></li>
+                                            <li><a class="link-melorin" href="#">Мелорин</a></li>
+                                        </ul>
+                                    </section>
+
+                                </a>
+
+
 
                             </li>
 
@@ -57,7 +64,7 @@
                                         <path fill="currentColor"
                                             d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
                                     </svg>
-                                </a>
+                                    Поиск </a>
                                 <section class="modal modal-search">
                                     <h2 class="visually-hidden">Поиск</h2>
                                     <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
@@ -96,7 +103,7 @@
                                             <button class="modal-enter" type="submit">Войти</button>
                                             <p class="registration">
                                                 <a href="#">Забыли пароль</a><br />
-                                                <a href="#">Новая регситрация</a>
+                                                <a href="#">Новая регистрация</a>
                                             </p>
                                         </div>
                                     </form>
@@ -305,26 +312,6 @@
                 <div class="map"><span class="pin"></span></div>
             </section>
 
-            <section class="modal modal-feedback">
-                <h2>Мы обязательно вам ответим!</h2><span class="cross"></span>
-                <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                    <p>
-                        <label class="visually-hidden" for="name-user-field">Имя</label>
-                        <input class="name-user" type="text" name="name" id="name-user-field"
-                            placeholder="Как вас зовут?">
-                    </p>
-                    <p>
-                        <label class="visually-hidden" for="email-reply-field">e-mail</label>
-                        <input class="email-user" type="email" name="email" id="email-reply-field"
-                            placeholder="Ваша почта для ответа">
-                    </p>
-                    <p>
-                        <textarea name="comment" rows="10" cols="54">Напишите что-нибудь...</textarea>
-                    </p>
-                    <button type="submit">Отправить</button>
-                </form>
-            </section>
-
         </main>
 
         <footer class="main-footer">
@@ -396,6 +383,26 @@
                 </div>
             </div>
         </footer>
+
+        <section class="modal modal-feedback">
+            <batton class="modal-close" type="button">Закрыть</batton>
+            <h2>Мы обязательно вам ответим!</h2><span class="cross"></span>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label class="visually-hidden" for="name-user-field">Имя</label>
+                    <input class="name-user" type="text" name="name" id="name-user-field" placeholder="Как вас зовут?">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="email-reply-field">e-mail</label>
+                    <input class="email-user" type="email" name="email" id="email-reply-field"
+                        placeholder="Ваша почта для ответа">
+                </p>
+                <p>
+                    <textarea name="comment" rows="10" cols="54">Напишите что-нибудь...</textarea>
+                </p>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
     </div>
 
 
