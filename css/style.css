@@ -144,11 +144,16 @@ nav {
     border-radius: 30px;
     padding: 5px 15px;
     margin: 0;
+    color: #ffffff;
     
 }
 
 .topmenu .topmenu-current a {
     border: none;
+}
+
+.topmenu:hover .topmenu-current {
+    color: #000000;
 }
 
 .submenu-wrapper {
