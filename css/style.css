@@ -10,8 +10,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: local("Roboto"),
-    local("Roboto-Medium"),
+    src: local("Roboto-Medium"),
     url("../fonts/Robotomedium.woff2") format("woff2"),
     url("../fonts/Robotomedium.woff") format("woff");
     font-weight: 500;
@@ -20,8 +19,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: local("Roboto"),
-    local("Roboto-Bold"),
+    src: local("Roboto-Bold"),
     url("../fonts/Robotobold.woff2") format("woff2"),
     url("../fonts/Robotobold.woff") format("woff");
     font-weight: 700;
@@ -358,8 +356,9 @@ li.basket {
     width: 540px;
     position: absolute;
     right: 0;
-    top: 50px;
+    top: 31px;
     z-index: 1;
+    flex-direction: column;
 
     display: none;
 }
@@ -1578,7 +1577,7 @@ a {
     width: 260px;
     position: absolute;
     right: 25px;
-    top: 60px;
+    top: 40px;
 }
 
 .address-phone h3 {
@@ -1635,14 +1634,6 @@ a {
     text-decoration: none;
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
     vertical-align: top;
-}
-
-.map {
-    background-image: url("../img/map.jpg");
-    background-position: -20px -105px;
-    height: 430px;
-    margin-bottom: 20px;
-    width: 1200px;
 }
 
 .modal-background {
@@ -1798,7 +1789,7 @@ a {
     width: 80px;
     height: 140px;
     position: absolute;
-    left: 270px;
+    left: 250px;
     top: 140px;
     
 }
@@ -1894,6 +1885,7 @@ a {
 .main-footer {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .main-footer-wrapper {
